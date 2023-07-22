@@ -9,3 +9,5 @@
 # Type exception controller
 
 - There is a type exception controller for numbers smaller than or equals to 0 and for letters
+
+# Used Black as formatter on VSC
