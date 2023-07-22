@@ -64,7 +64,7 @@ def columns_sumation(matrix):
 
         print(
             "Column",
-            column_index + 1,
+            column_index,
             ":",
             [row[column_index] for row in matrix],
             "-> Sum:",
