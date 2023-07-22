@@ -1,5 +1,11 @@
 # Importing functions from utils
-from utils import exception_handler, populate_matrix, print_matrix, rows_sumation
+from utils import (
+    exception_handler,
+    populate_matrix,
+    print_matrix,
+    rows_sumation,
+    columns_sumation,
+)
 
 
 def generate_matrix():
@@ -13,6 +19,8 @@ def generate_matrix():
     print_matrix(typed_input, matrix)
     # Rows sumation
     rows_sumation(matrix)
+    # Columns sumation
+    columns_sumation(matrix)
 
 
 generate_matrix()
