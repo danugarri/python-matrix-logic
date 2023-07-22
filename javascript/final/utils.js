@@ -39,6 +39,7 @@ const printRowsSumation = (matrix) => {
 };
 const printColumnsSumation = (matrix) => {
   console.log("\n\nColumns Array: \n");
+  // Printing Columns sumation
   const columnsSumationArray = [];
 
   // Calculate the sum for each column
