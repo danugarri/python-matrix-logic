@@ -1,4 +1,10 @@
-const { printMatrix, generateMatrix, printRowsSumation, populateMatrix } = require("./utils");
+const {
+  printMatrix,
+  generateMatrix,
+  printRowsSumation,
+  populateMatrix,
+  printColumnsSumation,
+} = require("./utils");
 
 // 1. Bi-dimensional Matrix
 const readline = require("readline").createInterface({
@@ -22,6 +28,8 @@ readline.question(`Type the number of rows and columns: `, (input) => {
   printMatrix(matrix);
   // Printing rows sumation
   printRowsSumation(matrix);
+  // Printing Columns sumation
+  printColumnsSumation(matrix);
 
   readline.close();
 });
