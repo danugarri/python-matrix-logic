@@ -53,14 +53,22 @@ def rows_sumation(matrix):
 
 
 def columns_sumation(matrix):
-    print("\nColumns sumation")
-    columns_array_sumation = []
-    # Adding row_index
-    for row in matrix:
-        for column_index, column in enumerate(matrix):
-            # Each row sumation
-            column_sum = sum(column)
-            # Appending each sumation to the Rows array sumation
-            columns_array_sumation.append(column_sum)
-        print("Row", column_index, ":", column, "-> Sum:", column_sum)
-    print("\nColumns Array sumation:", columns_array_sumation)
+    print("\nColumns summation")
+    columns_array_summation = []
+
+    for column_index in range(len(matrix[0])):  # Loop through each column index
+        column_sum = sum(
+            row[column_index] for row in matrix
+        )  # Sum the elements in the current column
+        columns_array_summation.append(column_sum)
+
+        print(
+            "Column",
+            column_index + 1,
+            ":",
+            [row[column_index] for row in matrix],
+            "-> Sum:",
+            column_sum,
+        )
+
+    print("\nColumns Array summation:", columns_array_summation)
