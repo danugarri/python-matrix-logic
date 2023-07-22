@@ -18,7 +18,7 @@ const populateMatrix = (matrix) => {
 };
 const printMatrix = (matrix) => {
   for (let row of matrix) {
-    console.log(`|\t${row.join("\t")}\t|`);
+    console.log(`\n|\t${row.join("\t")}\t|`);
   }
 };
 
@@ -35,25 +35,30 @@ const printRowsSumation = (matrix) => {
     console.log(`This is the sumation for row ${matrix.indexOf(row)}: `, rowsSumation);
     rowsSumationArray.push(rowsSumation);
   }
-  console.log("Rows Array:", rowsSumationArray);
+  console.log("\nRows Array sumation:", rowsSumationArray);
 };
 const printColumnsSumation = (matrix) => {
   console.log("\n\nColumns Array: \n");
   // Printing Columns sumation
   const columnsSumationArray = [];
+  const columnsArray = [];
 
   // Calculate the sum for each column
   for (let col = 0; col < matrix[0].length; col++) {
     let columnSum = 0;
+    let column = [];
     for (let row = 0; row < matrix.length; row++) {
       columnSum += matrix[row][col];
+      column.push(matrix[row][col]);
     }
 
     console.log(`This is the sumation for column ${col}: `, columnSum);
     columnsSumationArray.push(columnSum);
+    columnsArray.push(column);
   }
+  console.log("Array of array with each column: ", columnsArray);
 
-  console.log("Columns Array:", columnsSumationArray);
+  console.log("\nColumns Array Sumation:", columnsSumationArray);
 };
 
 module.exports = {
