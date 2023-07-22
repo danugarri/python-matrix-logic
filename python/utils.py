@@ -1,6 +1,20 @@
 import random  # Module to generate random numbers
 
 
+def exception_handler():
+    try:
+        # Exception controller
+        typed_input = int(input("Enter the number of rows and columns:"))
+    except ValueError:
+        print("Invalid input type. Please enter a positive integer not a letter.")
+        return None
+
+    if typed_input <= 0:
+        print("The typed input must be bigger than 0.")
+        return None
+    return typed_input
+
+
 def populate_matrix(typed_input):
     # Initialize matrix
     matrix = []

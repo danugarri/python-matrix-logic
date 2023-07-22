@@ -1,17 +1,11 @@
 # Importing functions from utils
-from utils import populate_matrix, print_matrix, rows_sumation
+from utils import exception_handler, populate_matrix, print_matrix, rows_sumation
 
 
 def generate_matrix():
-    try:
-        # Exception controller
-        typed_input = int(input("Enter the number of rows and columns:"))
-    except ValueError:
-        print("Invalid input type. Please enter a positive integer not a letter.")
-        return
-
-    if typed_input <= 0:
-        print("The typed input must be bigger than 0.")
+    typed_input = exception_handler()
+    if typed_input is None:
+        print("Invalid input or value not provided. Exiting....")
         return
     # Initialise and populate Matrix
     matrix = populate_matrix(typed_input)
