@@ -19,7 +19,7 @@ def generate_matrix():
     # Matrix population
     for row in range(typed_input):
         row_array = []
-        # A for loop for column entries
+        # Loop for column entries
         for column in range(typed_input):
             # Adding random numbers between 0 an 9 inculded
             row_array.append(random.randint(0, 9))
