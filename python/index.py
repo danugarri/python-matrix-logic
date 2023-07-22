@@ -1,3 +1,6 @@
+import random  # Module to generate random numbers
+
+
 def generate_matrix():
     try:
         # Exception controller
@@ -18,7 +21,8 @@ def generate_matrix():
         row_array = []
         # A for loop for column entries
         for column in range(typed_input):
-            row_array.append(0)
+            # Adding random numbers between 0 an 9 inculded
+            row_array.append(random.randint(0, 9))
         matrix.append(row_array)
 
     # For printing the matrix
