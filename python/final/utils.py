@@ -59,7 +59,7 @@ def columns_sumation(matrix):
     for column_index in range(len(matrix[0])):  # Loop through each column index
         column_sum = sum(
             row[column_index] for row in matrix
-        )  # Sum the elements in the current column
+        )  # Sumarise the elements in the current column
         columns_array_summation.append(column_sum)
 
         print(
