@@ -31,6 +31,7 @@ def populate_matrix(typed_input):
 
 
 def print_matrix(typed_input, matrix):
+    print("\n")
     for row in range(typed_input):
         print("|\t", end="")
         for column in range(typed_input):
@@ -49,3 +50,29 @@ def rows_sumation(matrix):
         rows_array_sumation.append(row_sum)
         print("Row", row_index, ":", row, "-> Sum:", row_sum)
     print("\nRows Array sumation:", rows_array_sumation)
+
+    return rows_array_sumation
+
+
+def columns_sumation(matrix):
+    print("\nColumns summation")
+    columns_array_summation = []
+
+    for column_index in range(len(matrix[0])):  # Loop through each column index
+        column_sum = sum(
+            row[column_index] for row in matrix
+        )  # Sumarise the elements in the current column
+        columns_array_summation.append(column_sum)
+
+        print(
+            "Column",
+            column_index,
+            ":",
+            [row[column_index] for row in matrix],
+            "-> Sum:",
+            column_sum,
+        )
+
+    print("\nColumns Array summation:", columns_array_summation)
+
+    return columns_array_summation
