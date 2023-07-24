@@ -1,5 +1,5 @@
 # Importing functions from utils
-from utils import (
+from .utils import (
     exception_handler,
     populate_matrix,
     print_matrix,
@@ -24,3 +24,7 @@ def generate_matrix():
 
 
 generate_matrix()
+
+
+if __name__ == "__main__":
+    generate_matrix()
