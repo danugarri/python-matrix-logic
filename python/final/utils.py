@@ -51,6 +51,8 @@ def rows_sumation(matrix):
         print("Row", row_index, ":", row, "-> Sum:", row_sum)
     print("\nRows Array sumation:", rows_array_sumation)
 
+    return rows_array_sumation
+
 
 def columns_sumation(matrix):
     print("\nColumns summation")
@@ -72,3 +74,5 @@ def columns_sumation(matrix):
         )
 
     print("\nColumns Array summation:", columns_array_summation)
+
+    return columns_array_summation

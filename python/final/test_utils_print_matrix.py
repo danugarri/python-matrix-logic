@@ -4,11 +4,8 @@ import sys
 from utils import print_matrix
 from test_utils_polulate_matrix import TYPED_INPUT
 
-# Constant definition
-BUILTIN_INPUT = "builtins.input"
 
-
-class TestExceptionHandler(unittest.TestCase):
+class TestPrintMatrix(unittest.TestCase):
     # This function is a built in one
     def setUp(self):
         print("\nTesting printed matrix:")
