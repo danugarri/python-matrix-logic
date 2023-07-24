@@ -25,6 +25,5 @@
     `python python/test_file_name`
     - i.e: python python/test_utils_rows_sumation.py
     
-* *** Remenber to be located inside the python folder with cd python ****
 
 # Used Black as formatter on VSC
