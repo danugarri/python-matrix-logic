@@ -4,7 +4,7 @@
     `python python/__init__.py`
 2. Option 2: Via Script
     `generate-matrix`
-    
+
 * Executed at project root
 
 `After that execution you must type the number of columns and rows`
@@ -22,8 +22,8 @@
 
 2. Run each test separately
 - In order to test an especific one you can run:
-    `python test_file_name`
-    - i.e: python test_utils_rows_sumation.py
+    `python python/test_file_name`
+    - i.e: python python/test_utils_rows_sumation.py
     
 * *** Remenber to be located inside the python folder with cd python ****
 

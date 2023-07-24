@@ -1,5 +1,5 @@
 import unittest
-from .utils import exception_handler
+from python.utils import exception_handler
 from unittest.mock import patch
 
 # Constant definition
