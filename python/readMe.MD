@@ -1,8 +1,11 @@
 # How to execute the code
 
-    `python index.py`
-
-* Remenber to be located inside the python folder with cd python
+1. Option 1
+    `python __init__.py`
+    * Remenber to be located inside the python folder with cd python
+2. Option 2: Via Script
+    `generate-matrix`
+    * Executed at project root
 
 `After that execution you must type the number of columns and rows`
 
@@ -22,6 +25,6 @@
     `python test_file_name`
     - i.e: python test_utils_rows_sumation.py
     
-* Remenber to be located inside the python folder with cd python
+* *** Remenber to be located inside the python folder with cd python ****
 
 # Used Black as formatter on VSC

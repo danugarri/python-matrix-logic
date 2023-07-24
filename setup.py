@@ -6,9 +6,11 @@ setup(
     description="This is a python package to handle multidimensional arrays with its corresponding unit tests with unittest",
     author="Daniel Garrido",
     packages=find_packages(),
+    # scripts
     entry_points={
         "console_scripts": [
-            "generate-matrix = python.index:generate_matrix",
+            # Main script
+            "generate-matrix = python.__init__:generate_matrix",
         ],
     },
 )
