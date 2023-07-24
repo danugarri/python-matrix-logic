@@ -38,3 +38,9 @@ class TestPopulateMatrix(unittest.TestCase):
                 self.assertGreaterEqual(element, 0)
                 self.assertLessEqual(element, 9)
                 print(element, "is >= 0 and <= 9")
+
+
+# In order to test this file separately
+
+if __name__ == "__main__":
+    unittest.main()

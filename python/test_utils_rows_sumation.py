@@ -27,3 +27,9 @@ class TestRowsSumation(unittest.TestCase):
                 "=",
                 result[sumation_index],
             )
+
+
+# In order to test this file separately with python test_utils_rows_sumation.py
+
+if __name__ == "__main__":
+    unittest.main()

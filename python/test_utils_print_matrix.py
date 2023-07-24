@@ -31,3 +31,9 @@ class TestPrintMatrix(unittest.TestCase):
         print(
             "stdout output: ", output_buffer.getvalue(), "\nEquals\n:", expected_output
         )
+
+
+# In order to test this file separately
+
+if __name__ == "__main__":
+    unittest.main()

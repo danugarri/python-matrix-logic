@@ -25,3 +25,9 @@ class TestExceptionHandler(unittest.TestCase):
         with patch(BUILTIN_INPUT, return_value="f"):
             result = exception_handler()
         self.assertIsNone(result)
+
+
+# In order to test this file separately
+
+if __name__ == "__main__":
+    unittest.main()

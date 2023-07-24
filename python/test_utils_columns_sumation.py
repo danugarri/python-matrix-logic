@@ -27,3 +27,9 @@ class TestColumnsSumation(unittest.TestCase):
                 "=",
                 result[sumation_index],
             )
+
+
+# In order to test this file separately
+
+if __name__ == "__main__":
+    unittest.main()
