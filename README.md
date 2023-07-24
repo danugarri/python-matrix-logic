@@ -27,3 +27,6 @@
     
 
 # Used Black as formatter on VSC
+
+# Github url
+'https://github.com/danugarri/python-matrix-logic'
