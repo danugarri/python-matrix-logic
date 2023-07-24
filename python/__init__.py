@@ -2,7 +2,7 @@
 # Entry point
 
 # Importing functions from utils
-from .utils import (
+from python.utils import (
     exception_handler,
     populate_matrix,
     print_matrix,
@@ -26,9 +26,10 @@ def generate_matrix():
     columns_sumation(matrix)
 
 
-generate_matrix()
+# Commented the function call because it is already called bellow
+# generate_matrix()
 
 
-# Necesa
+# Necessary to execute the scrip from the setup file
 if __name__ == "__main__":
     generate_matrix()

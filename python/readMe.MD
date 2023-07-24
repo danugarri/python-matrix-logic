@@ -1,11 +1,11 @@
 # How to execute the code
 
 1. Option 1
-    `python __init__.py`
-    * Remenber to be located inside the python folder with cd python
+    `python python/__init__.py`
 2. Option 2: Via Script
     `generate-matrix`
-    * Executed at project root
+    
+* Executed at project root
 
 `After that execution you must type the number of columns and rows`
 
