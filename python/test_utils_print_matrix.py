@@ -1,8 +1,8 @@
 import unittest
 import io
 import sys
-from utils import print_matrix
-from test_utils_polulate_matrix import TYPED_INPUT
+from .utils import print_matrix
+from .test_utils_polulate_matrix import TYPED_INPUT
 
 
 class TestPrintMatrix(unittest.TestCase):

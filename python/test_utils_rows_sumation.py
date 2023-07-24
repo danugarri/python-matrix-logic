@@ -1,6 +1,6 @@
 import unittest
-from utils import rows_sumation
-from test_utils_polulate_matrix import TYPED_INPUT
+from .utils import rows_sumation
+from .test_utils_polulate_matrix import TYPED_INPUT
 
 
 class TestRowsSumation(unittest.TestCase):

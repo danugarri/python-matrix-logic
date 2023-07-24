@@ -1,5 +1,5 @@
 import unittest
-from utils import populate_matrix
+from .utils import populate_matrix
 
 # Constant definition
 TYPED_INPUT = 4
