@@ -5,6 +5,7 @@ setup(
     version="1.0.0",
     description="This is a python package to handle multidimensional arrays with its corresponding unit tests with unittest",
     author="Daniel Garrido",
+    url='https://github.com/danugarri/python-matrix-logic',
     packages=find_packages(),
     # scripts
     entry_points={
